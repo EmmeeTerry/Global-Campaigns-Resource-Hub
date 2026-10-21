@@ -97,7 +97,8 @@ a {
 }
 
 /* RESOURCE CARDS */
-.partner-grid{grid-template-columns:repeat(3,1fr)}
+.campaign-tile{border-top:4px solid var(--red)}
+.campaign-tile h3{margin-top:14px}
 
 .resource-grid {
   display: grid;
@@ -293,20 +294,9 @@ a {
 
 <main class="container main">
 
-<!-- GLOBAL RESOURCE TILES -->
-
-<section class="section">
-
-  <div class="section-heading">
-    <h2>Global Campaign Resources</h2>
-    
-  </div>
-
-  <div class="resource-grid">
-
-    <!-- GLOBAL EVENTS CALENDAR -->
-
-    <a
+<!-- ALL CAMPAIGN AND PARTNER RESOURCES -->
+<div class="resource-grid">
+<a
       class="resource-card"
       href="https://apps.powerapps.com/play/e/default-18791e17-6159-4f52-a8d4-de814ca8284a/a/80d68583-19a8-417e-a419-53eb805eae08"
       target="_blank"
@@ -338,9 +328,7 @@ a {
 
     </a>
 
-    <!-- WEBINAR HUB -->
-
-    <a
+<a
       class="resource-card"
       href="https://hitachivantara.sharepoint.com/sites/To-PartnerCommunicationsFY23/SitePages/Webinars-for-Sales-%26-Marketing.aspx"
       target="_blank"
@@ -372,20 +360,7 @@ a {
 
     </a>
 
-    <!-- GLOBAL MEDIA REQUEST -->
-    <a class="resource-card" href="https://hitachivantara.sharepoint.com/sites/To-PartnerCommunicationsFY23/SitePages/Paid-Media-Hub.aspx" target="_blank" rel="noopener noreferrer" aria-label="Open Paid Media Hub in a new tab">
-      <div class="card-top">
-        <span class="card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M7 9h10M7 13h10M7 17h6"/></svg></span>
-        <span class="arrow">↗</span>
-      </div>
-      <h3>Paid Media Planning &amp; Performance</h3>
-      <p>Explore global and partner paid media campaigns, media plans and roadmaps, performance dashboards and insights. Submit or track requests and stay current on campaign updates.</p>
-      <span class="card-action">Explore paid media resources ↗</span>
-    </a>
-
-    <!-- CONTENT LIBRARY -->
-
-    <a
+<a
       class="resource-card"
       href="https://hitachivantara.sharepoint.com/sites/To-PartnerCommunicationsFY23/SitePages/Content-Library.aspx"
       target="_blank"
@@ -405,7 +380,7 @@ a {
         <span class="arrow">↗</span>
       </div>
 
-      <h3>Content Library</h3>
+      <h3>Campaign Content &amp; Activation</h3>
 
       <p>
         Search campaign assets by type, use case, audience, funnel stage and region; review abstracts, access promotional resources, and create outreach emails or one-slide briefs.
@@ -417,25 +392,18 @@ a {
 
     </a>
 
-  </div>
+<a class="resource-card" href="https://hitachivantara.sharepoint.com/sites/To-PartnerCommunicationsFY23/SitePages/Paid-Media-Hub.aspx" target="_blank" rel="noopener noreferrer" aria-label="Open Paid Media Hub in a new tab">
+      <div class="card-top">
+        <span class="card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M7 9h10M7 13h10M7 17h6"/></svg></span>
+        <span class="arrow">↗</span>
+      </div>
+      <h3>Paid Media Planning &amp; Performance</h3>
+      <p>Explore global and partner paid media campaigns, media plans and roadmaps, performance dashboards and insights. Submit or track requests and stay current on campaign updates.</p>
+      <span class="card-action">Explore paid media resources ↗</span>
+    </a>
 
-</section>
-
-<!-- FEATURED GLOBAL CAMPAIGNS -->
-
-<section class="section">
-
-  <div class="section-heading">
-    <h2>Featured global campaigns</h2>
-    <p>Campaign-specific resources</p>
-  </div>
-
-  <div class="campaign-grid">
-
-    <!-- DMR CAMPAIGN -->
-
-    <a
-      class="campaign-card"
+<a
+      class="resource-card campaign-tile"
       href="https://brand.hitachivantara.com/guidelines/guide/00542d60-e1a7-4da7-9e5f-133c03191dbc/page/866a1c87-9288-496c-81b3-34b288b00a1f"
       target="_blank"
       rel="noopener noreferrer"
@@ -453,16 +421,14 @@ a {
         Access campaign playbooks, messaging, content and activation materials to support Data Modernization &amp; Resilience programs.
       </p>
 
-      <span class="campaign-action">
+      <span class="card-action">
         Explore campaign resources ↗
       </span>
 
     </a>
 
-    <!-- ADF CAMPAIGN -->
-
-    <a
-      class="campaign-card"
+<a
+      class="resource-card campaign-tile"
       href="https://brand.hitachivantara.com/guidelines/guide/207608cc-f422-4ffc-93b5-773dcdece4fb/page/dfee33fc-20ed-47b3-9e85-fcfce24b1d03"
       target="_blank"
       rel="noopener noreferrer"
@@ -480,30 +446,19 @@ a {
         Access campaign playbooks, messaging, content and activation materials to support AI Data Foundation programs.
       </p>
 
-      <span class="campaign-action">
+      <span class="card-action">
         Explore campaign resources ↗
       </span>
 
     </a>
 
-  </div>
-
-</section>
-
-<!-- PARTNER RESOURCES -->
-<section class="section">
-  <div class="section-heading"><h2>Partner Resources</h2><p>Partner account manager communications and enablement</p></div>
-  <div class="resource-grid partner-grid">
-    <!-- PAM EMAIL TEMPLATE HUB -->
-    <a class="resource-card" href="https://hitachivantara.sharepoint.com/sites/To-PartnerCommunicationsFY23/SitePages/PAM-to-Partner-Email-Templates.aspx" target="_blank" rel="noopener noreferrer" aria-label="Open PAM to Partner Email Template Hub in a new tab">
+<a class="resource-card" href="https://hitachivantara.sharepoint.com/sites/To-PartnerCommunicationsFY23/SitePages/PAM-to-Partner-Email-Templates.aspx" target="_blank" rel="noopener noreferrer" aria-label="Open PAM to Partner Email Template Hub in a new tab">
       <div class="card-top"><span class="card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 7 9-7"/></svg></span><span class="arrow">↗</span></div>
-      <h3>Partner Email Templates &amp; Outreach</h3>
+      <h3>To-Partner Email Templates &amp; Customization</h3>
       <p>Find PAM-to-partner templates by objective, category or region; customize copy, personalize from CSV lists, translate where supported, and copy or open/download Outlook and Word-compatible drafts.</p>
       <span class="card-action">Open page ↗</span>
     </a>
-
-  </div>
-</section>
+</div>
 
 <footer class="footer">
   Global Campaigns · Internal marketing resource hub
