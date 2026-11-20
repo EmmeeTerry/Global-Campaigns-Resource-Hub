@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Global Events Calendar | Hitachi Vantara</title>
+<style>
+:root{--red:#cc0000;--ink:#202124;--muted:#61666e;--line:#e1e3e7;--bg:#f5f6f8}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{text-decoration:none;color:inherit}
+.shell{max-width:1600px;margin:0 auto;padding:0 22px 26px}
+.topbar{background:#fff;border-bottom:3px solid var(--red)}
+.topinner{max-width:1600px;padding:16px 22px 14px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.title{min-width:260px}.eyebrow{font-size:10px;letter-spacing:1.6px;font-weight:800;color:var(--red);text-transform:uppercase;margin-bottom:5px}
+h1{font-size:25px;line-height:1.2;margin:0;font-weight:700;letter-spacing:-.45px}
+.subtitle{margin:5px 0 0;color:var(--muted);font-size:12px;line-height:1.4}
+.links{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+.links a{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:8px 12px;background:#fff;border:1px solid #d9dce1;color:#32343a;font-size:12px;line-height:1.25;font-weight:600;white-space:nowrap;transition:background .15s,border-color .15s}
+.links a:hover{border-color:var(--red);background:#fff5f5;color:var(--red)}
+.links a:focus-visible,.calendar-open:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.links a.primary{color:var(--red);border-color:var(--red)}
+.links a.muted{border-color:transparent;color:#60656b;font-weight:500;text-decoration:underline;text-underline-offset:2px;padding:8px}
+.tip{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0 10px;font-size:12px;color:var(--muted)}
+.calendar-open{color:var(--red);font-weight:650;font-size:12px;white-space:nowrap}
+.frame{width:100%;height:calc(100vh - 165px);min-height:680px;border:1px solid var(--line);background:#fff;display:block}
+@media(max-width:900px){.topinner{align-items:flex-start}.links{justify-content:flex-start}.frame{height:850px}}
+@media(max-width:600px){.shell{padding:0 10px 12px}.topinner{padding:15px 12px}.title{min-width:0}h1{font-size:21px}.links{gap:6px}.links a{font-size:11px;min-height:32px;white-space:normal}.tip{flex-wrap:wrap}.frame{min-height:600px;height:850px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="topinner">
+<div class="title">
+<div class="eyebrow">Hitachi Vantara / Global Marketing</div>
+<h1>Global Events Calendar</h1>
+<p class="subtitle">Plan, discover, and activate global and regional events.</p>
+</div>
+<nav class="links" aria-label="Global campaigns resources">
+<a class="primary" href="https://hitachivantara.sharepoint.com/sites/To-PartnerCommunicationsFY23/SitePages/Global-Campaigns-Resource-Hub.aspx" target="_blank" rel="noopener noreferrer">Global Campaigns Resource Hub ↗</a>
+<a href="https://hitachivantara.sharepoint.com/sites/To-PartnerCommunicationsFY23/SitePages/Content-Library.aspx" target="_blank" rel="noopener noreferrer">Content Library ↗</a>
+<a href="https://hitachivantara.sharepoint.com/sites/To-PartnerCommunicationsFY23/SitePages/Webinars-for-Sales-%26-Marketing.aspx" target="_blank" rel="noopener noreferrer">Webinar Activation Resources ↗</a>
+<a class="muted" href="https://teamup.com/kstpnyn1if2nbpoqfh" target="_blank" rel="noopener noreferrer">One Hitachi Event Calendar ↗</a>
+</nav></div></header>
+<main class="shell">
+<div class="tip"><span>Browse events, filter by region or type, and select an event to view details.</span><a class="calendar-open" href="https://apps.powerapps.com/play/e/default-18791e17-6159-4f52-a8d4-de814ca8284a/a/80d68583-19a8-417e-a419-53eb805eae08" target="_blank" rel="noopener noreferrer">Open calendar in Power Apps ↗</a></div>
+<iframe class="frame" title="Hitachi Vantara Global Events Calendar" src="https://apps.powerapps.com/play/e/default-18791e17-6159-4f52-a8d4-de814ca8284a/a/80d68583-19a8-417e-a419-53eb805eae08" allow="fullscreen" loading="eager"></iframe>
+</main>
+</body></html>
